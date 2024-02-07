@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact-Spaceman</title>
+    <meta
+      name="description"
+      content="The best re-usable space code performance maintenance service on Earth."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/5f8540d33d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/Moon-Rocket.jpg" alt="Moon Rocket" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="services.html"> Services </a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html"> Contact </a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="projects.html"> Projects
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="content" class="container my-4" role="main">
+      <div class="row">
+        <div class="col">
+          <h1 class="cc-inner-title">Kontaktieren Sie Uns</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="cc-contact-text">
+            <div class="rich-text">
+              <p>
+                Brauchen Sie ein Entwicklerteam? Hassen Sie es, Ihr Project mitten
+                im Sommer aufzugeben? Haben Sie zu viel Geld zum Ausgeben?
+              </p>
+              <p>Toll!</p>
+              <p>
+                Kontaktieren Sie uns unter:<br /><a href="tel:0800-SPACEMAN"
+                  >0800-SPACEMAN</a
+                ><br /><a href="mailto:spaceman@space.com">spaceman@space.com</a
+                ><br />
+              </p>
+            </div>
+          </div>
+          <div class="d-none d-md-block">
+            <a href="" target="_blank">
+              <picture>
+                <img
+                  src="images/Moon-Walk.jpg"
+                  alt="NASA Moon Walk"
+                  style="width: 100%; height: auto"
+                />
+              </picture>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mt-md-2 mt-0">
+          <form action="/contact/" method="POST" role="form">
+            <input
+              type="hidden"
+              name="csrfmiddlewaretoken"
+              value="YGt7EbCcip3LcwLctyTHnTKgaLPgWlBExQoOO6ia6IS0ByFIci0LTBw12MSzd9cv"
+            />
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="id_your-name"> Ihr Name (erforderlich) </label>
+                  <input
+                    type="text"
+                    name="your-name"
+                    maxlength="255"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                    id="id_your-name"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="id_your-company">
+                    Ihre Firma (erforderlich)
+                  </label>
+                  <input
+                    type="text"
+                    name="your-company"
+                    maxlength="255"
+                    class="form-control"
+                    placeholder="Your Company"
+                    required
+                    id="id_your-company"
+                  />
+
+                  <small class="form-text text-muted cc-font-light"
+                    >SpaceX, Blue Origin, NASA, Virgin Galactic, Galactic
+                    Empire?</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="id_your-email"> Ihr Email (erforderlich) </label>
+                  <input
+                    type="email"
+                    name="your-email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                    id="id_your-email"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="id_your-message">
+                    Ihre Nachricht (erforderlich)
+                  </label>
+                  <textarea
+                    name="your-message"
+                    cols="40"
+                    rows="6"
+                    class="form-control"
+                    placeholder="Your Message"
+                    required
+                    id="id_your-message"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary btn-lg"
+              style="padding-left: 3.5rem; padding-right: 3.5rem"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <section
+      class="py-4 mt-lg-5 mt-0"
+      style="
+        background-color: #814ebf;
+        background-image: url('images/contact-overlay.png');
+      "
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 text-lg-center text-center">
+            <h2 class="h2 cc-contact-footer-h2">
+              Wir kümmern uns gut um Ihr Project Ideen.
+            </h2>
+            <p class="cc-contact-footer-p mb-0">
+              Wir behandeln Ihr Quellcode, als wäre es unsere eigenes. Unsere Standards
+              sind höher als die Höhe von ISS. Wir genießen es auch, Ihr Software zu
+              testen, bevor wir es ausliefern.
+            </p>
+          </div>
+         
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark py-4 text-light text-md-left text-center cc-footer">
+      <div class="container">
+        <div class="row mx-lg-n3">
+          <div class="px-lg-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="cc-footer-title">Links</div>
+
+            <a class="cc-footer-link-lg d-block" href="services.html">
+              Services
+            </a>
+
+            <a class="cc-footer-link-lg d-block" href="contact.html">
+              Contact
+            </a>
+
+            <a
+              class="cc-footer-link-lg d-block"
+              href="projects.html">
+              Projects
+            </a>
+
+            <a class="cc-footer-link-lg d-block" href="impressum.html" target="_blank">
+              Impressum
+            </a>
+          </div>
+          <div class="px-lg-2 col-lg-3 col-md-6 col-sm-12">
+            <div class="cc-footer-title">Kontaktieren Sie Uns</div>
+            <div class="rich-text">
+              <p>
+                Kontaktieren Sie uns jederzeit unter<br /><a
+                  href="mailto:spaceman@space.com"
+                  >spaceman@space.com</a
+                >
+              </p>
+              <p>
+                * Alle Bilder von <a href="https://unsplash.com">unsplash.com</a
+                ><br />
+              </p>
+            </div>
+          </div>
+          <div class="px-lg-4 col-lg-3 col-md-6 col-sm-12">
+            <div class="cc-footer-title">die Öffnungszeit</div>
+            <div class="rich-text">
+              <p>Montag - Freitag<br />9:00 - 17:00</p>
+            </div>
+          </div>
+          <div class="px-lg-3 col-lg-3 col-md-6 col-sm-12">
+            <a href="https://github.com/Aharon7?tab=repositories" class="cc-footer-social-icon" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/aharon-babel-061406213/" class="cc-footer-social-icon" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <div class="cc-footer-copy">&copy; 2024 Spaceman</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
